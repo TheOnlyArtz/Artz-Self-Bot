@@ -1,0 +1,20 @@
+{
+  "name": "selfbot",
+  "version": "0.0.1",
+  "description": "NO desc?",
+  "main": "app.js",
+  "scripts": {
+    "test": "ping"
+  },
+  "author": "TheOnlyArtz",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "common-tags": "^1.4.0",
+    "discord.js": "^11.1.0",
+    "google": "^2.1.0",
+    "moment": "^2.18.1",
+    "overwatch-stats": "^3.0.2",
+    "winston": "^2.3.1"
+  }
+}
