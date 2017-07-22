@@ -8,7 +8,7 @@ Well, when it comes to **Self Bot** that means you need to supply
 Your own account's token in, so How are we going to do that?
 Simply open Discord and press `ctrl + shift + I` then go to 'Application' and
 At the buttom you will see Token category and please **Dont sure this token with someone**
-Sharing you token will be pure pain since you cannot regenerate it
+Sharing you token will be pure pain since you cannot regenerate it...
 Now after you got the secret token Go ahead and open `private.json.example`
 take down the `.example` from the name and inside the file put your token
 
