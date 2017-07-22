@@ -18,6 +18,7 @@ take down the `.example` from the name and inside the file put your token
 }
 ```
 
+**`AND THATS IT , YOU ARE GOOD TO GO`**
 ### LICENSE
 MIT License
 
