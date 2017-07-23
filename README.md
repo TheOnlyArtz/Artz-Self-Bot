@@ -18,6 +18,14 @@ take down the `.example` from the name and inside the file put your token
 }
 ```
 
+Inside app.js you will find the message event or look for something like
+if (message.author.id !== "numbers") return;
+Now these numbers are my ID but change the numbers to your ID
+for example
+```js
+if (message.author.id !== "277518204224405505") return;
+```
+
 **`AND THATS IT , YOU ARE GOOD TO GO`**
 ### LICENSE
 MIT License
