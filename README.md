@@ -6,7 +6,7 @@ but you will see way more soon,
 ### How Do I Use It?
 Well, when it comes to **Self Bot** that means you need to supply
 Your own account's token in, so How are we going to do that?
-Simply open Discord and press `ctrl + shift + I` then go to 'Application' and
+Simply open Discord and press `f12` in the browser on discordapp.com then go to 'Application' and
 At the buttom you will see Token category and please **Dont sure this token with someone**
 Sharing you token will be pure pain since you cannot regenerate it...
 Now after you got the secret token Go ahead and open `private.json.example`
