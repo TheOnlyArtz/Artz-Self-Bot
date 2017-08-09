@@ -52,7 +52,7 @@ client.on("message", async(message) => {
   if (cmd) {
     try {
       cmd.run(client, message, args);
-      logger.info(`${chalk.cyan(cmd.help.name)} just been executed by ${chalk.magenta(message.author.username)} inside ${chalk.yellow(message.guild.name)}`)
+      logger.info(`${chalk.cyan(cmd['help']['name'])} just been executed by ${chalk.magenta(message.author.username)} inside ${chalk.yellow(message.guild.name)}`)
     } catch (e) {
       logger.error(e);
     }
