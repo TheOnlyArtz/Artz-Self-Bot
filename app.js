@@ -22,15 +22,14 @@ client.commands = new Discord.Collection();
 
 client.on("guildMemberAdd", async (member) => {
   if (member.guild.id !== "326757077714337802") return;
-  if (member.guild.memberCount === /[0-9][0-9]+00+/) {
+  if (member.guild.memberCount.toString().match(/[0-9][0-9]+00+/)) {
     client.channels.get("329100407664148482")
     .send(`${member} - ${member.guild.memberCount}`)
-    let milestoneRole = client.guilds.get(message.guild.id).roles.find("id", "332929459957006347");
-    member.guild.member(member).addRole({
-      role : milestoneRole
-    })
+    let milestoneRole = client.guilds.get(member.guild.id).roles.get("328620759310401536");
+    member.guild.member(member).addRole(milestoneRole)
+    // console.log(milestoneRole);
   } else {
-    return
+    return;
   }
 });
 
