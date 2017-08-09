@@ -8,6 +8,7 @@ module.exports.run = async (client, message) => {
   if (!cm) {
     const embed = new Discord.RichEmbed()
     .addField('Comands', `${client.commands.map(c => `${prefix}${c.help.name}${' '.repeat(longest - c.help.name.length)} :: ${c.help.description}`).join('\n')}`)
+    .setColor(0x94b17a)
     message.channel.send({embed})
   } else {
     if (client.commands.has(cm)) {
