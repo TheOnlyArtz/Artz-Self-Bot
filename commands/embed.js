@@ -15,5 +15,5 @@ module.exports.run = async (client, message) => {
 module.exports.help = {
   category : 'fun',
   name: "embed",
-  description: 'Try to do that without a bot :wink: (you won\'t be able too)'
+  description: 'Try to do that without a bot (you won\'t be able too)'
 }
