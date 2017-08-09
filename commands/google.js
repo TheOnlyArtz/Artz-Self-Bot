@@ -5,7 +5,7 @@ module.exports.run = async (client, message) => {
 google.resultsPerPage = 3
 let args= message.content.split(" ").slice(1).join(" ")
 google(args, function (err, res){
-  if (err) console.error(err)
+  if (err) logger.error(err)
   var link = res.links;
   if (link[0] === undefined) return message.reply("Didnt find")
   const embed = new Discord.RichEmbed()
@@ -16,7 +16,7 @@ google(args, function (err, res){
     embed
   })
   .catch(e => {
-    message.channel.send(`Google search results => ${link[0].href}`)
+    logger.error(e)
   })
   });
 }
