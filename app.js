@@ -16,22 +16,9 @@ client.on("ready", async() => {
   logger.verbose(`Connected as: ${client.user.tag}`)
   logger.verbose(`Client ID: ${client.user.id}`)
   logger.verbose(`====================================`)
-  await client.user.setGame(" </[0-9]\w+/g>", "https://www.twitch.tv/theonlyartz");
+  await client.user.setGame("</[0-9]\w+/g>", "https://www.twitch.tv/theonlyartz");
 });
 client.commands = new Discord.Collection();
-
-client.on("guildMemberAdd", async (member) => {
-  if (member.guild.id !== "326757077714337802") return;
-  if (member.guild.memberCount.toString().match(/[0-9][0-9]+00+/)) {
-    client.channels.get("329100407664148482")
-    .send(`${member} - ${member.guild.memberCount}`)
-    let milestoneRole = client.guilds.get(member.guild.id).roles.get("328620759310401536");
-    member.guild.member(member).addRole(milestoneRole)
-    // console.log(milestoneRole);
-  } else {
-    return;
-  }
-});
 
 fs.readdir("./commands", (err, files) => {
   if(err) logger.error(err);
